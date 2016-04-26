@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:textAlignment="center"
-        android:text="Doa Ai!"
+        android:text="Doa Ai! :)"
         android:fontFamily="sans-serif"
         android:textColor="#ffff99"
         android:textSize="45sp" />
