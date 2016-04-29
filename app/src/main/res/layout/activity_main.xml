@@ -17,21 +17,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:textAlignment="center"
-        android:text="Doa Ai!   "
+        android:text="Doa Ai!"
         android:fontFamily="sans-serif"
-        android:textColor="#ffff99"
+        android:textColor="#663300"
         android:textSize="45sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:text="Faça uma criança sorrir hoje! Doe agora mesmo!"
-        android:textColor="#ffffcc"
+        android:textColor="#ffffb3"
         android:textSize="50sp"
         android:fontFamily="sans-serif-light"
         android:textAlignment="center"
         android:layout_below="@id/nomeapp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"/>
 
@@ -42,5 +42,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
         android:text="Doar Agora!"
-        android:background="#ffffb3"/>
+        android:background="#ffffb3"
+        android:onClick="startSecondActivity"/>
 </RelativeLayout>

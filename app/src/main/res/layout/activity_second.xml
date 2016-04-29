@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
@@ -10,8 +10,9 @@
         android:scaleType="centerCrop"
         />
     <LinearLayout
+        android:id="@+id/linearlayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
@@ -20,7 +21,7 @@
             android:layout_marginLeft="20dp"
             android:text="Cadastro"
             android:textSize="40sp"
-            android:textColor="#ffff99"/>
+            android:textColor="#bf8040"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,7 +34,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:inputType="number"
+            android:inputType="textEmailAddress"
             android:ems="10"
             android:hint="exemplo@exemplo.com"
             android:id="@+id/editText"
@@ -54,7 +55,6 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:inputType="textPassword"
-            android:id="@+id/editText"
             android:hint="•••••••"
             android:layout_marginTop="8dp"
             android:layout_marginRight="20dp"
@@ -74,22 +74,36 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:inputType="textPassword"
-            android:id="@+id/editText"
             android:hint="•••••••"
             android:layout_marginTop="8dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:background="@android:color/white"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_marginTop="30dp"
-            android:text="enviar"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-
-            android:text="info"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+    <Button
+        android:id="@+id/botaoenviar"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="enviar"
+        android:layout_marginRight="8dp"
+        android:background="#ffffb3"
+        android:onClick="startThirdActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="info"
+        android:layout_marginTop="30dp"
+        android:background="#ffffb3"
+        android:onClick="startFourthActivity"/>
+    </LinearLayout>
+
 </RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leonbsusa.crowdfundingapp.ThirdActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:id="@+id/linearpage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quais instituições você gostaria de ajudar?"
+            android:textSize="40sp"
+            android:textColor="#663300"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instituições de apoio a crianças especiais"
+            android:textSize="27sp"
+            android:textColor="#804000"
+            android:layout_marginTop="30dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abrigo de animais"
+            android:textSize="27sp"
+            android:textColor="#804000"
+            android:layout_marginTop="30dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lar de idosos"
+            android:textSize="27sp"
+            android:textColor="#804000"
+            android:layout_marginTop="30dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orfanatos"
+            android:textSize="27sp"
+            android:textColor="#804000"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearpage2"
+        android:background="#ffff80"
+        android:onClick="startFifthActivity"/>
+</RelativeLayout>
