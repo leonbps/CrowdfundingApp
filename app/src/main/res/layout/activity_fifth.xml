@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
-        android:text=" Você acabou de ajudar as instituições da sua cidade a contuar a fazer um trabalho arduo e honrrado. "
+        android:text=" Você acabou de ajudar as instituições da sua cidade a contuar a fazer um trabalho árduo e honrrado. "
         android:textSize="28dp"
         android:textAlignment="center"
         android:textColor="#994d00"
